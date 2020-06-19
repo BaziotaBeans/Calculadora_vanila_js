@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Beans">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/estilo.css">
+        <title>Calculadora</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="display-result">
+                <h1 class="result"></h1>
+            </div>
+            <div class="display-input">
+                <input type="text" placeholder="" disabled  class="input-digito">
+            </div>
+            <div class="titulo"><h1>Calculadora</h1></div>
+            <div class="number">
+                <div class="line">
+                    <a class="btn btn-reset btn-operador">C</a>
+                    <a class="btn btn-mais-menos btn-operador" >+/-</a>
+                    <a class="btn btn-resto btn-operador">%</a>
+                    <a class="btn btn-divisao btn-operador" onclick="input_number(this)">/</a>
+                </div>
+                <div class="line">
+                    <a class="btn btn-7 btn-number" onclick="input_number(this)">7</a>
+                    <a class="btn btn-8 btn-number" onclick="input_number(this)">8</a>
+                    <a class="btn btn-9 btn-number" onclick="input_number(this)">9</a>
+                    <a class="btn btn-multiplicacao btn-operador" onclick="input_number(this)">*</a>
+                </div>
+                <div class="line">
+                    <a class="btn btn-4 btn-number" onclick="input_number(this)">4</a>
+                    <a class="btn btn-5 btn-number" onclick="input_number(this)">5</a>
+                    <a class="btn btn-6 btn-number" onclick="input_number(this)">6</a>
+                    <a class="btn btn-menos btn-operador" onclick="input_number(this)">-</a>
+                </div>
+                <div class="line">
+                    <a class="btn btn-1 btn-number" onclick="input_number(this)">1</a>
+                    <a class="btn btn-2 btn-number" onclick="input_number(this)">2</a>
+                    <a class="btn btn-3 btn-number" onclick="input_number(this)">3</a>
+                    <a class="btn btn-mais btn-operador" onclick="input_number(this)">+</a>
+                </div>
+                <div class="line line-5">
+                    <a class="btn btn-0 btn-number" onclick="input_number(this)">0</a>
+                    <a class="btn btn-ponto btn-number" onclick="input_number(this)">.</a>
+                    <a class="btn btn-igual btn-operador">=</a>
+                </div>
+            </div>
+        </div>
+        <ul class="square-animation">
+            <li></li>
+        </ul>
+        <script src="js/app.js"></script>
+    </body>
+
+</html>
